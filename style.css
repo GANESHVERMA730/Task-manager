@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f, #2b5876);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.datetime {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#addBtn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2b5876;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  background: #1e3c52;
+}
+
+#taskList {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#taskList li {
+  background: #f4f6f8;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+
+#taskList li:hover {
+  transform: scale(1.02);
+}
+
+.task-text {
+  cursor: pointer;
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ff4d4d;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.quote-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f0f3f7;
+  text-align: center;
+}
+
+.quote-box h3 {
+  margin-bottom: 8px;
+}
+
+#newQuote {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #2b5876;
+  color: white;
+  cursor: pointer;
+}
+
+#newQuote:hover {
+  background: #1e3c52;
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  #addBtn {
+    width: 100%;
+  }
+}

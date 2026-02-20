@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Task Manager</h1>
+    <p id="datetime" class="datetime"></p>
+
+    <div class="controls">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="stats">
+      <span id="totalTasks">Total: 0</span>
+      <span id="completedTasks">Completed: 0</span>
+    </div>
+
+    <div class="quote-box">
+      <h3>💬 Motivation of the Day</h3>
+      <p id="quote">Loading...</p>
+      <button id="newQuote">New Quote</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
